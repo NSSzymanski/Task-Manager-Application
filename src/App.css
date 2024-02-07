@@ -1,0 +1,87 @@
+.App {
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #195e54;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.app-title {
+  margin: 0;
+  padding: 10px;
+  color: white;
+}
+
+div.todo-list {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.what-to-do {
+  height: 94px;
+  width: 430px;
+  background-color: #9b6b25;
+  margin: 20px 25px;
+  cursor: -webkit-grab;
+  -webkit-box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 15px 0 rgba(41, 65, 57, 0.2);
+  float: left;
+  padding: 10px;
+  text-align: center;
+}
+
+div.what-to-do:active {
+  cursor: -webkit-grabbing;
+}
+
+div.what-to-do h3 {
+  font-size: 18px;
+  padding: 5px;
+  margin: 0 0 5px 0;
+}
+
+div.what-to-do:hover {
+  opacity: 0.5;
+}
+
+div.what-to-do > span {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  opacity: 0;
+  transition: opacity 0.25s linear;
+}
+
+div.edit-button {
+  margin: 2px;
+}
+
+div.what-to-do > textarea {
+  height: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 0 0 5px 0;
+  text-align: center;
+  width: 100%;
+}
