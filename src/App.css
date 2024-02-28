@@ -16,13 +16,14 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(33, 58, 141);
 }
 
 body {
   margin: 0;
   padding: 0;
-  background: #195e54;
+  background-image: url("../public/corkBoard.jpg");
+  background-size: cover;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -30,7 +31,8 @@ body {
 .app-title {
   margin: 0;
   padding: 10px;
-  color: white;
+  color: rgb(58, 60, 204);
+  background-color: bisque;
 }
 
 div.todo-list {
@@ -42,7 +44,7 @@ div.todo-list {
 .what-to-do {
   height: 94px;
   width: 430px;
-  background-color: #9b6b25;
+  background-color: #a97df0;
   margin: 20px 25px;
   cursor: -webkit-grab;
   -webkit-box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.2);
@@ -50,6 +52,15 @@ div.todo-list {
   float: left;
   padding: 10px;
   text-align: center;
+}
+
+.what-to-do.medium {
+  border: 5px solid orange; /* Adjust color and size as needed */
+}
+
+/* CSS for high priority level */
+.what-to-do.high {
+  border: 7px solid red; /* Adjust color and size as needed */
 }
 
 div.what-to-do:active {
@@ -62,9 +73,9 @@ div.what-to-do h3 {
   margin: 0 0 5px 0;
 }
 
-div.what-to-do:hover {
+/* div.what-to-do:hover {
   opacity: 0.5;
-}
+} */
 
 div.what-to-do > span {
   position: absolute;
